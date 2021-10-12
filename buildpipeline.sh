@@ -6,6 +6,6 @@ sleep 1m
 #TODO: fault injection..
 sleep 15m
 ssh ubuntu@172.24.38.172 "cd storm-cluster/buildscripts; ./deploy_check_topology.sh;"
-sleep15m
+sleep 15m
 ./errors.sh
 ./logs.sh
