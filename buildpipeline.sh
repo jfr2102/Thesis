@@ -5,6 +5,7 @@ sleep 1m
 ./testdriver.sh
 #TODO: fault injection..
 sleep 15m
+ssh ubuntu@172.24.38.172 "cd storm-cluster/buildscripts; ./deploy_check_topology.sh;"
+sleep15m
 ./errors.sh
-sleep 15m
 ./logs.sh
