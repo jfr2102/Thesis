@@ -1,7 +1,5 @@
-./buildpipeline.sh
-wait 30m
-./buildpipeline.sh
-wait 30m
-./buildpipeline.sh
-wait 30m
-./buildpipeline.sh
+./buildpipeline.sh 10
+./buildpipeline.sh 20
+./buildpipeline.sh 50
+./buildpipeline.sh 100
+./buildpipeline.sh 200

@@ -7,3 +7,5 @@ topologyname.sh
 storm-logs
 storm-metrics-reporter-prometheus
 topology-corectness
+*.csv
+datenanalyse
