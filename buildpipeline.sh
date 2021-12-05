@@ -23,4 +23,4 @@ sleep 5m
 python3 fetch-prom-metrics/fetch.py $destination
 echo "failure_start;failure_end;" >> kafka-logs/$destination/testdriverinfo.txt
 echo "$fault_start;$fault_end;" >> kafka-logs/$destination/testdriverinfo.txt
-echo destination >> runs.txt
+echo "$destination" , >> runs.txt
