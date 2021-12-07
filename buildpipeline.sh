@@ -16,9 +16,10 @@ fault_start=`date +"%Y-%m-%d-%H-%M-%S"`
 ./chaosTest/$1_one_supervisor.sh $2
 fault_end=`date +"%Y-%m-%d-%H-%M-%S"`
 sleep 5m
-#ssh ubuntu@172.24.38.172 "cd storm-cluster/buildscripts; ./deploy_check_topology.sh;"
-#sleep 30m
-./errors.sh $destination #$1 $2
+./errors.sh $destination KafkaTopology
+ssh ubuntu@172.24.38.172 "cd storm-cluster/buildscripts; ./deploy_check_topology.sh;"
+sleep 15m
+./errors.sh $destination CheckTopology #$1 $2
 ./logs.sh $destination #$1 $2
 python3 fetch-prom-metrics/fetch.py $destination
 echo "failure_start;failure_end;" >> kafka-logs/$destination/testdriverinfo.txt
