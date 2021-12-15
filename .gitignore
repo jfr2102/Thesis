@@ -9,3 +9,5 @@ storm-metrics-reporter-prometheus
 topology-corectness
 *.csv
 datenanalyse
+Test
+*.txt

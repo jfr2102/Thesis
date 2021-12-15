@@ -1,1 +1,2 @@
-ssh ubuntu@172.24.38.172 /home/ubuntu/storm-cluster/buildscripts/swarmsetup.sh
+source machine_config.sh
+ssh vm1 /home/ubuntu/storm-cluster/buildscripts/swarmsetup.sh
