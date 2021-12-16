@@ -1,4 +1,4 @@
-echo Groupname >> runs.txt
+echo $1 >> runs.txt
 ./buildpipeline.sh delay 10
 ./buildpipeline.sh delay 10
 ./buildpipeline.sh delay 10
