@@ -14,7 +14,7 @@ git clone git@github.com:jfr2102/Thesis.git
 - Configure ssh access between hosts (add ssh public key of driver machine to authorized_hosts on required machines)
 - Configure [prom-metrics-fetcher](https://github.com/jfr2102/fetch-prom-metrics) as decribed.
 
-##Usage:
+## Usage:
 - Recommended: run in "background":
 ```bash
 nohup ./buildpipeline delay 100 &
@@ -23,7 +23,7 @@ nohup ./buildpipeline delay 100 &
 ```bash
 nohup ./run_4_times.sh batch_identifier &
 ```
-#### Buldpipeline Arguments: 
+#### Buildpipeline Arguments: 
   - ./buildpipeline delay *delay_time_ms*: Pumba delay on one randomly chosen supervisor container
   - ./buldpipeline loss *loss_percentage*: Pumba package loss on one randomly chosen supervisor container
 #### Testdriver Arguments:
