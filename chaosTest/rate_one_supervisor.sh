@@ -1,5 +1,5 @@
 #!/bin/bash
-source ../machine_config.sh
+source machine_config.sh
 
 Hosts=($vm1 $vm2 $vm3)
 random=`echo $(($RANDOM%3))`
